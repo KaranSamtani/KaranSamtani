@@ -1,0 +1,5 @@
+MyName=input('hello boy, please type your name here boy:')
+MyAge=int(input('What is your age boy?'))
+ComputerAge= 5000000
+AgeDifference= ComputerAge - MyAge
+print('Hey %s, guess what? Our age difference is %d, bye'%(MyName, AgeDifference ))
