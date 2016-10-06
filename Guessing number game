@@ -1,0 +1,8 @@
+MyNumber = 452
+TheirNumber = int(input("Guess my number?"))
+if MyNumber > TheirNumber:
+    print("Oh, your number is a bit too low!")
+if MyNumber < TheirNumber:
+    print("Oh, your number is a bit too high!")
+if MyNumber == TheirNumber:
+    print("Oh finally, you got it right!")
