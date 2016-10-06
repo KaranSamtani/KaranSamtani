@@ -1,0 +1,4 @@
+while True:
+    love_status = input ('Do you love computer science? y/n')
+    if love_status == "y" :
+        break
