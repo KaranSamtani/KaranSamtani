@@ -1,0 +1,7 @@
+p=1000
+n=12
+r=0.08
+t = int(input("I have a 1000 bucks and the bank interest is 8%,\n type here the number of years you want to keep the money in the bank and I will calculate what you have after x years:"))
+A=p*(1+(r/n))*n*t
+
+print(A)
