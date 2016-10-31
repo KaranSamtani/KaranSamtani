@@ -1,0 +1,37 @@
+
+def main():
+    pass
+
+if __name__ == '__main__':
+    main()
+
+def isEven(number):
+    if number <= 0:
+        return False
+    elif number % 2 != 0:
+        return False
+    else:
+        return True
+
+
+myinput = int(input("number:"))
+print(isEven(myinput))
+
+
+
+
+
+
+def main():
+    pass
+
+if __name__ == '__main__':
+    main()
+
+
+myage = int(input("my age:"))
+
+if myage > 17:
+    print("im working")
+else:
+    print("im studying")
