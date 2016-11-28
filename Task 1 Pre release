@@ -1,0 +1,11 @@
+def MakeList():
+    monster_list = []
+    with open('Monsters.txt') as f:
+        for line in f:
+            parts = line.split(",")
+            monster_list.append(parts[1])
+            print(parts[1])
+            
+
+MakeList()
+#Might want to actually execute this function
