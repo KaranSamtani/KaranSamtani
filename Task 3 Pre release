@@ -1,0 +1,29 @@
+wordOfString = [None, None, None, None, None, None, None, None, None, None]
+upperCaseLetters = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"]
+
+myCamelString = input("Insert Camel String:")
+
+tempStr = ""
+i = 0
+j = 0
+
+for myChar in myCamelString:
+    if i == 0:
+        tempStr = tempStr + myChar
+    else:
+        if myChar in upperCaseLetters:
+            wordOfString[j] = tempStr
+            j += 1
+            tempStr = myChar
+        else:
+            tempStr = tempStr + myChar #adding on previous letters to add on everything
+
+    i += 1
+
+wordOfString[j] = tempStr
+
+for x in range(j + 1, 10):
+    wordOfString[x] = "(EMPTY)"
+
+for word in wordOfString:
+    print(word)
