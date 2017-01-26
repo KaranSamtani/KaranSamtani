@@ -1,0 +1,47 @@
+
+    while len(str(MembershipNumber))!= 6:
+        print('error, invalid length')
+        MembershipNumber=int(input('Membership Number:'))
+        if MembershipNumber==0:
+            break
+
+    while len(str(DateOfVisit))!= 8:
+        print('error, invalid length')
+        DateOfVisit=input('Date Of Visit:')
+
+    file.write(str(MembershipNumber) + ',' + str(DateOfVisit))
+
+    file.close()
+
+def searchfile():
+
+    file=open('filename.txt','r') #Task4.4
+
+
+    file.read #Task4.4
+    MembershipNumber=int(input('Input Membership Number To Search For Date:'))
+
+    for line in file:
+
+        array = line.split(",")
+
+        if str(MembershipNumber)==array[0]:
+          print(array[1])
+
+    file.close()
+
+def menu():
+    #menu_state=True
+    while True:
+        menu_choice=input('what would you like to do?\n'
+                          '1. writing\n'
+                          '2. reading\n'
+                          '3. quit')
+        if menu_choice=='1' or menu_choice=='writing':
+            writefile()
+        elif menu_choice=='2' or menu_choice=='reading':
+            searchfile()
+        elif menu_choice=='3' or menu_choice=='quit':
+            break
+
+menu()
