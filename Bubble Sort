@@ -1,0 +1,14 @@
+MyList=[95,23,90,65]
+Temp=0
+j=1
+
+for passnum in range(len(MyList)-1,0,-1):
+    print(passnum)
+    for j in range(passnum):
+        if MyList[j]> MyList[j+1]:
+            Temp=MyList[j]
+            MyList[j]=MyList[j+1]
+            MyList[j+1]=Temp
+            j=j+1
+
+        print(MyList)
